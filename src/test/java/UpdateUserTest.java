@@ -30,7 +30,7 @@ public class UpdateUserTest {
     @After
     public void deleteUser(){
         if(accessToken != null) {
-            userClient.delete(user, accessToken);
+            userClient.delete(accessToken);
         }
     }
 

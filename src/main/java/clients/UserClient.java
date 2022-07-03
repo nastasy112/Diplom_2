@@ -17,7 +17,7 @@ public class UserClient extends RestAssuredClient{
                 .post(CREATE_USER);
     }
 
-    public void delete(User user, String accessToken){
+    public void delete(String accessToken){
         reqSpecWithoutHeaders
                 .header("Authorization", accessToken)
                 .when()
